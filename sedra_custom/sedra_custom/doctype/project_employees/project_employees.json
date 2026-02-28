@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "employee",
+  "employee_name",
   "department",
   "designation"
  ],
@@ -36,13 +37,21 @@
    "label": "Designation",
    "options": "Designation",
    "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-01 02:14:03.576578",
+ "modified": "2026-03-01 02:23:08.012046",
  "modified_by": "Administrator",
  "module": "Sedra Custom",
  "name": "Project Employees",
